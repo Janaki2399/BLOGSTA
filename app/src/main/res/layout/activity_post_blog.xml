@@ -1,9 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
-    tools:context=".Post_blog">
+    tools:context="com.example.ekene.blogzone.PostActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/imageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/department"
+        android:background="@drawable/shapename"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+
+        android:hint="Department"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="20dp"
+    android:id="@+id/title"
+    android:background="@drawable/shapename"
+    android:padding="10dp"
+    android:textColor="@color/white"
+    android:textColorHighlight="@color/white"
+    android:textColorHint="@color/white"
+    android:textStyle="bold"
+    android:hint="Post Title"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/description"
+        android:background="@drawable/shapename"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+
+        android:hint="Post Description"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapesignup"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="POST"
+        android:id="@+id/post"
+        android:textColor="@color/white" />
+</LinearLayout>
+
+</ScrollView>

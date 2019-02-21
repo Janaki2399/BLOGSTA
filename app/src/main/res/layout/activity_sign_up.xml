@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20dp">
-
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -23,16 +22,15 @@
     <EditText
         android:layout_width="369dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:background="@drawable/shapename"
         android:drawablePadding="10dp"
         android:id="@+id/email"
-        android:hint="Username"
+        android:hint="Email"
         android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         android:textColorHint="@color/white" />
-
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
@@ -46,67 +44,32 @@
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         android:textColorHint="@color/white"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:buttonTint="@color/white"
-            android:checked="true"
-            android:text="Remember Me"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:layout_width="227dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:drawablePadding="6dp"
-            android:padding="4dp"
-            android:text="Forget Password"
-            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
-            android:textColor="@color/white" />
-
-
-    </LinearLayout>
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Log In"
+        android:text="Register"
         android:shadowColor="@android:color/transparent"
         android:padding="15dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/register"
+        android:textColor="@color/white"
+        android:background="@drawable/shapesignup"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="Back to login ?"
         android:id="@+id/login"
-        android:background="@drawable/shapelogin"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/shapesignup"
-        android:padding="15dp"
-        android:shadowColor="@android:color/transparent"
-        android:text="Sign Up"
-        android:id="@+id/signup"
         android:textColor="@color/white" />
-
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="30dp"
@@ -114,6 +77,4 @@
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="20dp"
         android:visibility="gone" />
-
-
 </LinearLayout>

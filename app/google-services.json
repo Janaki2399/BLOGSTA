@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "979710523083",
+    "firebase_url": "https://blogsta-ad0cd.firebaseio.com",
+    "project_id": "blogsta-ad0cd",
+    "storage_bucket": "blogsta-ad0cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979710523083:android:dac24e0f54738b53",
+        "android_client_info": {
+          "package_name": "com.example.blogsta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979710523083-eefag5j5kmo1tn1hb87rgjfou8oehuli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKfJ5YM-xcH-IT18DdyC0TXpuFC69GtSA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
