@@ -26,8 +26,8 @@ public class SectionActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // set an Intent to Another Activity
-                Intent intent = new Intent(SectionActivity.this, Post_blog.class);
-                //intent.putExtra("image", logos[position]); // put image data in Intent
+                Intent intent = new Intent(SectionActivity.this, Feed.class);
+                intent.putExtra("position", position); // put image data in Intent
                 startActivity(intent); // start Intent
             }
         });
