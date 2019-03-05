@@ -23,7 +23,20 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_insert_photo_black_24dp" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/type"
+            android:background="@drawable/shapename"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
 
+            android:hint="Blog / Guide"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <EditText
             android:layout_marginTop="20dp"
             android:id="@+id/department"

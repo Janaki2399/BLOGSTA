@@ -49,17 +49,72 @@ public class Feed extends AppCompatActivity {
 
         Intent mIntent = getIntent();
         int tempholder = mIntent.getIntExtra("position", 0);
+        int number = mIntent.getIntExtra("number", 0);
+if(number==10) {
+    if (tempholder == 0) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("cse");
 
-        if(tempholder==0)
-        {
-            mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("cse");
+    } else if (tempholder == 1) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Mechanical");
 
-        }
-        else if(tempholder==1)
-        {
-            mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Mechanical");
+    } else if (tempholder == 2) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Electronics");
 
-        }
+    } else if (tempholder == 3) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Automobile");
+
+    } else if (tempholder == 4) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Civil");
+    } else if (tempholder == 5) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Chemical");
+
+    } else if (tempholder == 6) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Nano");
+
+    } else if (tempholder == 7) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Mechatronics");
+
+    } else if (tempholder == 8) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Robotics");
+
+    } else if (tempholder == 9) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog").child("Aerospace");
+
+    }
+}
+else if(number==11)
+{
+    if (tempholder == 0) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("cse");
+
+    } else if (tempholder == 1) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Mechanical");
+
+    } else if (tempholder == 2) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Electronics");
+
+    } else if (tempholder == 3) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Automobile");
+
+    } else if (tempholder == 4) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Civil");
+    } else if (tempholder == 5) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Chemical");
+
+    } else if (tempholder == 6) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Nano");
+
+    } else if (tempholder == 7) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Mechatronics");
+
+    } else if (tempholder == 8) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Robotics");
+
+    } else if (tempholder == 9) {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Guide").child("Aerospace");
+
+    }
+}
         mRecyclerView = findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -133,9 +188,9 @@ public class Feed extends AppCompatActivity {
         }
         else if(id == R.id.logout){
             auth.signOut();
-            //Intent logouIntent = new Intent(PostActivity.this, MainActivity.class);
-            //logouIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            //startActivity(logouIntent);
+            Intent logouIntent = new Intent(Feed.this, MainActivity.class);
+            logouIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(logouIntent);
         }
         return super.onOptionsItemSelected(item);
     }
