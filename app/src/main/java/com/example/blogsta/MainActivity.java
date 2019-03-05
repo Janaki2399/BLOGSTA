@@ -47,7 +47,7 @@ public class MainActivity  extends AppCompatActivity {
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         btnSignup = (Button) findViewById(R.id.signup);
         btnLogin = (Button) findViewById(R.id.login);
-        //btnReset = (Button) findViewById(R.id.btn_reset_password);
+        btnReset = (Button) findViewById(R.id.forgotpassword);
 
         //Get Firebase auth instance
 
@@ -108,6 +108,15 @@ public class MainActivity  extends AppCompatActivity {
                         });
             }
         });
+
+        btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Forgotpassword.class);
+                startActivity(intent);
+                finish();
+            }
+    });
     }
     public void onBackPressed() {
         Intent a = new Intent(Intent.ACTION_MAIN);
