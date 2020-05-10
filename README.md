@@ -1,5 +1,6 @@
 # BLOGSTA
 An android app that provides a platform for users to blog and share information,articles,posts and formulate study guides for various subjects.
+An Android application easily available for all tech enthusiasts to upload,share,update and connect through blogs,posts and articles while also providing users with tips and study guides on how to approach a certain subject in all concerned fields.
 
 Module(s) Description:
 
